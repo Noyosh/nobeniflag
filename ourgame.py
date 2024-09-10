@@ -8,6 +8,12 @@ pygame.init()
 screen = pygame.display.set_mode((1000, 1000))
 pygame.display.set_caption("benitoroei")
 
+
+pygame.display.set_caption('image')
+
+
+imp = pygame.image.load("BENI.png").convert()
+
 running = True
 
 while running:
@@ -16,18 +22,18 @@ while running:
         # Check for QUIT event
         if event.type == pygame.QUIT:
             running = False
+        #
+        # keys=pygame.key.get_pressed()
+        #
+        # if keys[pygame.K_LEFT]:
+        #
+        # if keys[pygame.K_RIGHT]:
+        #
+        # if keys[pygame.K_DOWN]:
+        #
+        # if keys[pygame.K_UP]:
 
-        keys=pygame.key.get_pressed()
 
-        if keys[pygame.K_LEFT]:
-
-        if keys[pygame.K_RIGHT]:
-
-        if keys[pygame.K_DOWN]:
-
-        if keys[pygame.K_UP]:
-
-print("asdasd")
 
 
 
