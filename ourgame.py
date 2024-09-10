@@ -5,15 +5,13 @@ pygame.init()
 pygame.init()
 
 pygame.init()
-screen = pygame.display.set_mode((500, 250))
+screen = pygame.display.set_mode((1000, 1000))
 pygame.display.set_caption("benitoroei")
-screen.fill(" dark green")
-
-pygame.display.set_caption('image')
-
-
-imp = pygame.image.load("BENI.png").convert()
-
+x = 50
+y = 50
+vet = 5
+imp = pygame.image.load("BENI.png")
+imp = pygame.transform.scale(imp, (40 , 80))
 running = True
 
 while running:
@@ -22,108 +20,18 @@ while running:
         # Check for QUIT event
         if event.type == pygame.QUIT:
             running = False
-        pygame.display.flip()
-        # keys=pygame.key.get_pressed()
-        #
-        # if keys[pygame.K_LEFT]:
-        #
-        # if keys[pygame.K_RIGHT]:
-        #
-        # if keys[pygame.K_DOWN]:
-        #
-        # if keys[pygame.K_UP]:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    # screen.blit(imp, (0, 0))
+    keys=pygame.key.get_pressed()
+    if keys[pygame.K_LEFT]:
+        x -= 1
+    if keys[pygame.K_RIGHT]:
+        x+= 1
+    if keys[pygame.K_DOWN]:
+        y+= 1
+    if keys[pygame.K_UP]:
+        y -= 1
+    screen.fill("dark green")
+    screen.blit(imp ,(x, y))
+    pygame.display.update()
+print("1")
