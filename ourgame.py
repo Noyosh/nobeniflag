@@ -18,7 +18,7 @@ while running:
             running = False
 
 
-
+print("asd")
 
 
 
