@@ -1,5 +1,5 @@
 import pygame
 
+pygame.init()
 
 
-print("hey my friend!")
