@@ -2,4 +2,4 @@ import pygame
 
 
 
-print("hey my friend!")
+print("hey my beni!")
