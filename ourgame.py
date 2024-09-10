@@ -27,7 +27,7 @@ while running:
 
         if keys[pygame.K_UP]:
 
-print("asd")
+print("asdasd")
 
 
 
