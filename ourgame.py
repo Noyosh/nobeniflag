@@ -26,5 +26,5 @@ while running:
 
         if keys[pygame.K_DOWN]:
 
-        if keys[pygame.K_UP]::
+        if keys[pygame.K_UP]:
 
