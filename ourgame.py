@@ -35,3 +35,25 @@ while running:
     screen.blit(imp ,(x, y))
     pygame.display.update()
 print("1")
+
+
+
+
+
+
+
+
+
+
+
+        for row in range(25):
+            for column in range(50):
+                color = GREEN
+                if grid[row][column] == 1:
+                    color = WHITE
+                pygame.draw.rect(screen,
+                                 color,
+                                 [(MARGIN + WIDTH) * column + MARGIN,
+                                  (MARGIN + HEIGHT) * row + MARGIN,
+                                  WIDTH,
+                                  HEIGHT])
